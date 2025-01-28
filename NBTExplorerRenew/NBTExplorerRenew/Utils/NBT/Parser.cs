@@ -24,35 +24,35 @@ namespace NBTExplorerRenew.Utils.NBT
 
                 switch (currentTag.Type)
                 {
-                    case (TagTypes.TAG_End):
+                    case TagTypes.TAG_End:
                         break;
-                    case (TagTypes.TAG_Byte):
-                        currentTag.Payload = this.ParseInt(1);
+                    case TagTypes.TAG_Byte:
+                        currentTag.Payload = ParseInt(1);
                         break;
-                    case (TagTypes.TAG_Short):
-                        currentTag.Payload = this.ParseInt(2);
+                    case TagTypes.TAG_Short:
+                        currentTag.Payload = ParseInt(2);
                         break;
-                    case (TagTypes.TAG_Int):
-                        currentTag.Payload = this.ParseInt(4);
+                    case TagTypes.TAG_Int:
+                        currentTag.Payload = ParseInt(4);
                         break;
-                    case (TagTypes.TAG_Long):
-                        currentTag.Payload = this.ParseInt(8);
+                    case TagTypes.TAG_Long:
+                        currentTag.Payload = ParseInt(8);
                         break;
-                    case (TagTypes.TAG_Float):
+                    case TagTypes.TAG_Float:
                         break;
-                    case (TagTypes.TAG_Double):
+                    case TagTypes.TAG_Double:
                         break;
-                    case (TagTypes.TAG_ByteArray):
+                    case TagTypes.TAG_ByteArray:
                         break;
-                    case (TagTypes.TAG_String):
+                    case TagTypes.TAG_String:
                         break;
-                    case (TagTypes.TAG_List):
+                    case TagTypes.TAG_List:
                         break;
-                    case (TagTypes.TAG_Compound):
+                    case TagTypes.TAG_Compound:
                         break;
-                    case (TagTypes.TAG_IntArray):
+                    case TagTypes.TAG_IntArray:
                         break;
-                    case (TagTypes.TAG_LongArray):
+                    case TagTypes.TAG_LongArray:
                         break;
                 }
 
@@ -68,7 +68,7 @@ namespace NBTExplorerRenew.Utils.NBT
 
             for (int j = 0; j < size; j++)
             {
-                parsedInt += Data[j] << j * 8;
+                parsedInt += Data[j] << (j * 8);
                 i++;
             }
 

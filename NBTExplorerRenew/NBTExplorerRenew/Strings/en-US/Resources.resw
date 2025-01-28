@@ -117,14 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AboutWindow.CloneRepo" xml:space="preserve">
+    <value>Clone the repository</value>
+  </data>
+  <data name="AboutWindow.Copyright" xml:space="preserve">
+    <value>©2025 foxy pirate cove / Fnaf. Licensed under the GNU General Public License v2.0, se the LICENSE file for more information.</value>
+  </data>
+  <data name="AboutWindow.LicenseHeader" xml:space="preserve">
+    <value>License</value>
+  </data>
   <data name="AboutWindow.Title" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="AboutWindow.LicenseText" xml:space="preserve">
+    <value>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License, version 2, as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+Normally, there is a LICENSE file included with the software, where the full text of the license can be found.
+
+©2025 foxy pirate cove / Fnaf</value>
+  </data>
   <data name="AppName" xml:space="preserve">
     <value>NBTExplorer Renew</value>
-  </data>
-  <data name="AppVersion" xml:space="preserve">
-    <value>3.0.0</value>
   </data>
   <data name="ReleaseTag" xml:space="preserve">
     <value>Preview</value>
