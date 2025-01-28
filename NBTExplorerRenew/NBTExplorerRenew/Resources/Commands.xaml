@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:utils="using:NBTExplorerRenew.Utils"
+    xmlns:local="using:NBTExplorerRenew.Resources"
+    x:Class="NBTExplorerRenew.Resources.Commands">
+
+    <XamlUICommand
+        x:Name="OpenCommand"
+        ExecuteRequested="OpenCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/File/Open}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="OpenFile" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="O" Modifiers="Control" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="OpenFolderCommand"
+        ExecuteRequested="OpenFolderCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/File/OpenFolder}">
+        <XamlUICommand.IconSource>
+            <!-- FolderOpen -->
+            <FontIconSource Glyph="&#xE838;" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="O" Modifiers="Control,Shift" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="OpenSoftwareHomeFolderCommand"
+        ExecuteRequested="OpenSoftwareHomeFolderCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/File/OpenSoftwareHomeFolder}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Home" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="H" Modifiers="Control,Shift" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="OpenInFileExplorerCommand"
+        ExecuteRequested="OpenInFileExplorerCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/File/OpenInFileExplorer}">
+        <XamlUICommand.IconSource>
+            <!-- FileExplorer -->
+            <FontIconSource Glyph="&#xEC50;" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="E" Modifiers="Control,Shift" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="SaveCommand"
+        ExecuteRequested="SaveCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/File/Save}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Save" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="S" Modifiers="Control" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="RefreshCommand"
+        ExecuteRequested="RefreshCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/File/Refresh}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Refresh" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="R" Modifiers="Control" />
+            <KeyboardAccelerator Key="F5" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="ExitCommand"
+        ExecuteRequested="ExitCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/File/Exit}">
+        <XamlUICommand.IconSource>
+            <!-- ChromeClose -->
+            <FontIconSource Glyph="&#xE8BB;" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="Q" Modifiers="Control" />
+            <KeyboardAccelerator Key="F4" Modifiers="Menu" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="CutCommand"
+        ExecuteRequested="CutCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Edit/Cut}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Cut" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="X" Modifiers="Control" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="CopyCommand"
+        ExecuteRequested="CopyCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Edit/Copy}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Copy" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="C" Modifiers="Control" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="PasteCommand"
+        ExecuteRequested="PasteCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Edit/Paste}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Paste" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="V" Modifiers="Control" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="RenameCommand"
+        ExecuteRequested="RenameCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Edit/Rename}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Rename" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="F2" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="EditValueCommand"
+        ExecuteRequested="EditValueCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Edit/EditValue}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Edit" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="E" Modifiers="Control" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="DeleteCommand"
+        ExecuteRequested="DeleteCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Edit/Delete}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Delete" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="Delete" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="MoveUpCommand"
+        ExecuteRequested="MoveUpCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Edit/MoveUp}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Up" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="Up" Modifiers="Control" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="MoveDownCommand"
+        ExecuteRequested="MoveDownCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Edit/MoveDown}">
+        <XamlUICommand.IconSource>
+            <!-- Down -->
+            <FontIconSource Glyph="&#xE74B;" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="Down" Modifiers="Control" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="FindCommand"
+        ExecuteRequested="FindCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Search/Find}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Find" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="F" Modifiers="Control" />
+            <KeyboardAccelerator Key="F3" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="FindNextCommand"
+        ExecuteRequested="FindNextCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Search/FindNext}">
+        <XamlUICommand.IconSource>
+            <!-- PageRight -->
+            <FontIconSource Glyph="&#xE761;" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="N" Modifiers="Control" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="ReplaceCommand"
+        ExecuteRequested="ReplaceCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Search/Replace}">
+        <XamlUICommand.IconSource>
+            <!-- RepeatAll - but it looks like a "Replace" icon -->
+            <FontIconSource Glyph="&#xE8EE;" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="H" Modifiers="Control" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="ChunkFinderCommand"
+        ExecuteRequested="ChunkFinderCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Search/ChunkFinder}">
+        <XamlUICommand.IconSource>
+            <!-- SearchAndApps - a "Search" icon in a container -->
+            <FontIconSource Glyph="&#xE773;" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="F" Modifiers="Control,Shift" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="AboutCommand"
+        ExecuteRequested="AboutCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Help/About}">
+        <XamlUICommand.IconSource>
+            <!-- Infos -->
+            <FontIconSource Glyph="&#xE946;" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="F1" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+
+    <XamlUICommand
+        x:Name="SettingsCommand"
+        ExecuteRequested="SettingsCommand_ExecuteRequested"
+        Label="{utils:LocalizedStringResource Name=/Commands/Help/Settings}">
+        <XamlUICommand.IconSource>
+            <SymbolIconSource Symbol="Setting" />
+        </XamlUICommand.IconSource>
+        <XamlUICommand.KeyboardAccelerators>
+            <KeyboardAccelerator Key="F12" />
+        </XamlUICommand.KeyboardAccelerators>
+    </XamlUICommand>
+</ResourceDictionary>
